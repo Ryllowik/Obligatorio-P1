@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <section id="volverMenu">
+        <a href="javascript:void(0)" id="btnVolver">Volver al inicio</a>
+    </section>
+    <section id="inicioSesion">
+        <label for="txtUsuario">Ingrese nombre de usuario: </label>
+        <input type="text" id="txtUsuario"> <br><br>
+        <label for="txtUsuario">Ingrese contraseña: </label>
+        <input type="text" id="txtContraseña"> <br><br>
+        <button class="btn btn-primary" id="btnInicioSesion">Iniciar sesion</button> <br>
+        <a href="javascript:void(0)" id="btnUserfinal">Ingresar como invitado</a>
+    </section>
+    <section id="registerUser">
+        <div class="colabUser chefUser">
+            <h1>Publicar recetas</h1>
+            <label for="txtTitulo">Ingrese titulo:</label>
+            <input type="text" id="txtTitulo"> <br> <br>
+            <label for="fleImg">Ingrese imagen:</label>
+            <input type="file" id="fleImg"> <br><br>
+            <label for="txtTiempo">Ingrese tiempo en minutos:</label>
+            <input type="text" id="txtTiempo"> <br> <br>
+            <label for="txtElab">Ingrese elaboracion:</label>
+            <textarea id="txtElab" maxlength="150"></textarea> <br><br>
+            <button class="btn btn-primary" id="btnReceta">Publicar</button>
+        </div>
+        <div class="chefUser">
+            <h1>Registrar usuario</h1>
+            <label for="txtNombre">Ingrese nombre:</label>
+            <input type="text" id="txtNombre"> <br><br>
+            <label for="txtApellido">Ingrese apellido:</label>
+            <input type="text" id="txtApellido"> <br><br>
+            <button class="btn btn-primary" id="btnRegistrar">Registrar</button>
+        </div>
+        <div class="chefUser">
+            <div id="usuarioCont">
+                
+            </div>
+        </div>
+        <div class="chefUser">
+            <h1>Reportes</h1>
+            <div class="container my-5">
+                <div class="row">
+                    <div class="col-12">
+                        <label for="txtBuscarTiempo">Ingrese tiempo:</label>
+                        <input type="text" id="txtBuscarTiempo">
+                        <button id="btnBuscarTiempo">Buscar</button>
+                        <button id="btnOrdenarTiempo">Tiempo</button>
+                        <button id="btnOrdenarRendimiento">Rendimiento</button>
+                        <button id="btnOrdenarLimpiar">Clear</button>
+                    </div>
+                    <div class="col-12">
+                        <h5 id="menorTiempo"></h5>
+                        <h5 id="mayorTiempo"></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="container my-5">
+                <div class="row" id="listaRecetascont">
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="finalUser">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <input type="text" id="buscarReceta" placeholder="Buscar">
+                    <button class="btn btn-primary" id="btnBuscar">Buscar</button>
+                    <button class="btn btn-primary" id="btnClear">Clear</button>
+                </div>
+                <div class="col-8" id="noResultado">
+                    <h1>No se encontraron resultados</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" id="recetasCont">
+
+            </div>
+        </div>
+    </section>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

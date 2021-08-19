@@ -1,0 +1,21 @@
+.chefUser {
+    display: none;
+}
+.colabUser {
+    display: none;
+}
+#finalUser {
+    display: none;
+}
+
+#noResultado {
+    display: none;
+}
+
+#registerUser {
+    display: none
+}
+
+#volverMenu {
+    display: none;
+}
